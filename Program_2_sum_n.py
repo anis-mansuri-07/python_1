@@ -1,7 +1,8 @@
 #Program 2
 #sum of the first N natural number
 
-num  = int(input("Enter the number::"))
+num  = float(input("Enter the number::"))
+num = int(num)
 if(num>=0):
     Sum = int(num*(num+1)/2)  #Formula to find sum
 else:
