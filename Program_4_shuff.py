@@ -1,15 +1,12 @@
 #Program 4
 #Word shuffling using string manipulation.
-import random
-
-S = input("Enter string:")
-Spli = S.split()  
-x = int(len(Spli)/2)
-i  = 0
-while(i<x):
-    random.shuffle(Spli) #shuffling the words x times
-    i+=1
-
-for i in Spli:
-  print(i,end=" ")
+s = input("Enter String : ")
+lista = list(s)
+for i in range(0,len(s)-2):
+    if(i%2==0):
+         temp = lista[i]
+         lista[i] = lista[i+1]
+         lista[i+1] = temp
+s = ''.join(lista)
+print(s)
   
