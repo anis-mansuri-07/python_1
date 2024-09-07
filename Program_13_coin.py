@@ -58,3 +58,27 @@ while(price!=0):
         continue
 print("change of {} is".format(value))
 print("2000: {}\n500:{}\n200:{}\n100:{}\n50:{}\n20:{}\n10:{}\n5:{}\n2:{}\n1:{}\n".format(c2000,c500,c200,c100,c50,c20,c10,c5,c2,c1))
+
+
+
+
+
+
+
+
+amt = float(input("Enter amount:: "))
+amt = int(amt)
+coin1 = int(input("Enter coin no 1: "))
+coin2 = int(input("Enter coin no 2: "))
+coin3 = int(input("Enter coin no 3: "))
+count = 0
+
+
+for i in range(0,1+amt//coin1):
+    for j in range(0,1+amt//coin2):
+        for k in range(0,1+amt//coin3):
+            if i * coin1 + j * coin2 + k * coin3 == amt :
+              print(i,j,k,)
+              count += 1
+
+print("Total combination is:: {}".format(count))
